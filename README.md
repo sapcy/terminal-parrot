@@ -4,9 +4,7 @@
 
 ## Installing
 
-Either grab a build on the [releases page](https://github.com/jmhobbs/terminal-parrot/releases) or clone and run...
-
 ```bash
-$ go get -u github.com/jmhobbs/terminal-parrot
-$ terminal-parrot
+$ go build -a -ldflags '-extldflags "-static"' -o parrot .
+$ ./parrot -path ./animations cat
 ```
